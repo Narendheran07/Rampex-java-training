@@ -1,6 +1,6 @@
 package DAY_1.Class_task;
 
-public class Deteails {
+public class Details {
 
         public static void main(String[] args)
         {
