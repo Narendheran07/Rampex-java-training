@@ -1,23 +1,29 @@
 package DAY_2.Class_task;
+
 import java.util.Scanner;
 
 public class Traffic_Signal {
 
-        public static void main(String[] args)
-        {
-            Scanner sc= new Scanner(System.in);
-            System.out.print("Enter signal");
-            String colour = sc.nextLine();
-            if(colour.equals("green")||colour.equals("GREEN"))
-                System.out.print("go");
-            else if(colour.equals("yellow")||colour.equals("YELLOW"))
-                System.out.print("wait");
-            else if(colour.equals("red")||colour.equals("RED"))
-                System.out.print("stop");
-            else
-                System.out.print("INVALID SIGNAL");
+    public static void main(String[] args) {
 
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter signal: ");
+        String colour = sc.nextLine();
+
+        if (colour.equalsIgnoreCase("green")) {
+            System.out.println("Go");
+        }
+        else if (colour.equalsIgnoreCase("yellow")) {
+            System.out.println("Wait");
+        }
+        else if (colour.equalsIgnoreCase("red")) {
+            System.out.println("Stop");
+        }
+        else {
+            System.out.println("Invalid Signal");
         }
 
+        sc.close();
     }
-
+}
