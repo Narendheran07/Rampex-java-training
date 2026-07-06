@@ -1,14 +1,14 @@
 package DAY_1.Class_task;
 
 public class Details {
-
-        public static void main(String[] args)
-        {
-            char initial = 'S';
-            String name = "NARENDHERAN";
-            int age =19;
-            double cgpa = 8.4;
-            System.out.println(" My name is " + name +" ." + initial + " of age  " + age + " with the cgpa of " + cgpa);
-        }
+    public static void main(String[] args)
+    {
+        char initial = 'S';
+        String name = "NARENDHERAN";
+        int age =19;
+        double cgpa = 8.4;
+        System.out.println(" My name is " + name +" ." + initial + " of age  " + age + " with the cgpa of " + cgpa);
     }
+}
+
 
