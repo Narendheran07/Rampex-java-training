@@ -1,7 +1,12 @@
-package DAY_3.Class_task;import java.util.Scanner;
+package DAY_3.Class_task;
 
+import java.util.Scanner;
 
 public class Positive_odd_even {
+
+
+
+
 
         public static void main(String[] args){
             Scanner sc= new Scanner(System.in);
@@ -31,4 +36,6 @@ public class Positive_odd_even {
             sc.close();
         }
     }
+
+
 
