@@ -1,85 +1,67 @@
-package DAY_10.Cass_task;
+package DAY_10.Class_task;
 
-public class Sample_car_test {
-        public static void main(String[] args){
-            car07 cc = new car07();
-            cc.brand = "BMW";
-            cc.model="SUV";
-            cc.colour="Red";
-            cc.acclerate();
-            cc.acclerate();
+public class SampleCarTest {
+    public static void main(String[] args) {
 
-            //cc.colour="black";
-            // cc.drive();
-            // cc.details();
-            car07 c2 = new car07();
-            c2.brand = "benz";
-            c2.model="vintage";
-            c2.colour="black";
-            c2.acclerate();
-            c2.acclerate();
-            //c2.acclerate();
-            // c2.acclerate();
-            //  c2.acclerate();
-            //  c2.acclerate();
-            //  c2.acclerate();
-            c2.acclerate();
-            c2.acclerate();
-            c2.brake();
-            c2.brake();
-            c2.brake();
-            c2.brake();
-            c2.brake();
+        Car07 cc = new Car07();
+        cc.brand = "BMW";
+        cc.model = "SUV";
+        cc.colour = "Red";
 
-            //cc.colour="black";
-            //c2.drive();
-            //c2.details();
+        cc.accelerate();
+        cc.accelerate();
 
+        Car07 c2 = new Car07();
+        c2.brand = "Benz";
+        c2.model = "Vintage";
+        c2.colour = "Black";
 
-        }
+        c2.accelerate();
+        c2.accelerate();
+        c2.accelerate();
+        c2.accelerate();
+
+        c2.brake();
+        c2.brake();
+        c2.brake();
+        c2.brake();
+        c2.brake();
     }
-    class car07{
-        String brand;
-        String model;
-        String colour;
+}
 
-        int speed =0;
-        int Maxspeed = 40;
+class Car07 {
+    String brand;
+    String model;
+    String colour;
 
-        public void drive(){
-            System.out.println("the car is driving");
-        }
+    int speed = 0;
+    int maxSpeed = 40;
 
-        public void details() {
-
-            System.out.println(brand);
-            System.out.println(model);
-            System.out.println(colour);
-        }
-
-        public void acclerate() {
-            if(speed==40){
-                System.out.println("the car reached maximun speed");
-            }
-            else{
-                speed = speed + 5;
-
-                System.out.println(brand + " the car acclerate speed is " + speed);
-            }
-
-        }
-        public void brake(){
-            if(speed == 0){
-                System.out.println("the car is not moving");
-            }
-            else{
-                speed = speed -5;
-                System.out.println("the break is applied and speed "+speed+"kmh");
-
-            }
-
-        }
-
-
+    public void drive() {
+        System.out.println("The car is driving.");
     }
 
+    public void details() {
+        System.out.println("Brand : " + brand);
+        System.out.println("Model : " + model);
+        System.out.println("Colour: " + colour);
+    }
+
+    public void accelerate() {
+        if (speed >= maxSpeed) {
+            System.out.println(brand + " reached maximum speed.");
+        } else {
+            speed = speed + 5;
+            System.out.println(brand + " car speed is " + speed + " km/h");
+        }
+    }
+
+    public void brake() {
+        if (speed == 0) {
+            System.out.println("The car is not moving.");
+        } else {
+            speed = speed - 5;
+            System.out.println("Brake applied. Speed is " + speed + " km/h");
+        }
+    }
+}
