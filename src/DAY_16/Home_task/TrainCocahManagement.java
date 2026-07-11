@@ -1,0 +1,17 @@
+package DAY_16.Home_task;
+import java.util.ArrayList;
+
+public class TrainCocahManagement {
+
+        public static void main(String[] args){
+            ArrayList<String> n = new ArrayList<>();
+            n.add(0,"Engine");
+            n.add(1,"Coach 2");
+            n.add(2,"Coach 1");
+            n.add(3,"Guard");
+            n.remove(3);
+            System.out.println(n);
+
+        }
+    }
+
